@@ -1,71 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Portafolio Santiago Botero</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Hola Soy santiago Botero</h1>
-        <img style="width: 200px;" src="/fundamentos/semana3/01-basicos-de-html/task/image/Foto-perfil.jpg" alt="Foto de perfil">
-        <h3><span>Desarrollador Junior FullStack</span></h3>
-        <p>En este momento me encuentro estudiando en Academlo
-            para tener un Trabajo como programador FullStack y trabajar en lo
-            que me gusta, que es la programacion.
-        </p>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <body>
+    <nav class="nav">
+      <ul class="nav_ul">
+        <li><a href="#about-me">Sobre Mí</a></li>
+        <li><a href="#habilities">Habilidades</a></li>
+        <li><a href="#contacts">Contactos</a></li>
+      </ul>
+    </nav>
+    <header class="body__header header">
+      <article class="header__article article">
+        <section class="article__section">
+          <h1 class="article__h1">
+            Hola, Soy Santiago Botero Desarrollador Junior FullStack
+          </h1>
+          <p class="article__p">
+            En este momento me encuentro estudiando en Academlo para tener un
+            Trabajo como programador FullStack y trabajar en lo que me gusta,
+            que es la programacion.
+          </p>
+        </section>
+        <figure class="figure__article">
+          <img
+            class="header__img"
+            src="https://jml.neocities.org/html5-css3-js.png"
+            alt="Imagen"
+          />
+        </figure>
+      </article>
     </header>
     <main>
+      <section class="section__about">
+        <h2 class="section__h2">Sobre Mí</h2>
+        <h1 class="section__h1">Un poco sobre mí</h1>
+        <p class="section__p">
+          Soy un desarrollador web autodidacta y desarrollador de aplicaciones
+          móviles con experiencia en el diseño de nuevas funciones desde la
+          ideación hasta la producción, implementación de wireframes y flujos de
+          diseño en aplicaciones de software de alto rendimiento. Tomo en
+          consideración la experiencia del usuario al escribir código
+          reutilizable y eficiente. Combino apasionadamente el buen diseño, la
+          tecnología y la innovación en todos mis proyectos, los cuales me gusta
+          acompañar desde la primera idea hasta el lanzamiento. Actualmente
+          estoy enfocado en el desarrollo backend.
+        </p>
+      </section>
 
-        <section id="sobre-mi">
-            <h2>Sobre Mí</h2>
-            <p>Me gusta mucho los computadores, en mis tiempos libres juegos videojuegos
-                , me gusta jugar futbol y estar con mi familia, me gusta mucho la programacion.
-            </p>
-        </section>
-
-        <section id="educacion">
+      <!-- <section class="education">
             <h2>Educación</h2>
             <p>Actualmente estoy estudiando en Academlo pero ya cuento con 1 año de experiencia
                 en el mundo de la programacion, tengo varios diplomas de next u sobre programacion,
                 un diploma sobre Scrum y mi diploma de bachiller.
             </p>
+        </section> -->
+
+      <article class="article__habilities">
+        <h2 class="about__h2">Habilidades</h2>
+        <section class="section__habilities habilities-container">
+          <div class="habilities-item item">
+            <i class='bx bxl-html5'></i>
+            <p>HTML</p>
+          </div>
+          <div class="habilities-item">
+            <i class='bx bxl-css3'></i>
+            <p>CSS</p>
+          </div>
+          <div class="habilities-item">
+            <i class='bx bxl-javascript'></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="habilities-item">
+            <i class='bx bxl-nodejs'></i>
+            <p>NodeJS</p>
+          </div>
+          <div class="habilities-item">
+            <i class='bx bxl-vuejs' ></i>
+            <p>VueJS</p>
+          </div>
+          <!-- ... -->
+          <div class="habilities-item">
+            <i class='bx bxl-postgresql'></i>
+            <p>PostgreSQL</p>
+          </div>
+          <div class="habilities-item">
+            <i class='bx bxl-mongodb'></i>
+            <p>MongoDB</p>
+          </div>
+          <div class="habilities-item">
+            <i class='bx bxl-typescript'></i>
+            <p>TypeScript</p>
+          </div>
         </section>
 
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <hr>
-
-            <h3>Tecnologías:</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>NodeJS</li>
-                <li>TypeScript</li>
-                <li>Bases de datos Relacionales (PgAdmin)</li>
-                <li>Bases de datos No Relacionales (MongoDB)</li>
-                <li>VueJS</li>
-            </ul>
-
-
+          <!-- <section class="section__hab__soft">
             <h3>Habilidades blandas:</h3>
             <ul>
-                <li>Trabajo en equipo</li>
-                <li>Comunicación</li>
-                <li>Resolución de problemas</li>
+              <li>Trabajo en equipo</li>
+              <li>Comunicación</li>
+              <li>Resolución de problemas</li>
             </ul>
+          </section> -->
         </section>
+      </article>
     </main>
     <footer>
-        <p>&copy; Derechos Reservados</p>
+      <p>&copy; Derechos Reservados</p>
     </footer>
-</body>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var habilitiesContainer = document.querySelector(".habilities-container");
+
+      habilitiesContainer.addEventListener("mouseenter", function () {
+        habilitiesContainer.style.animationPlayState = "paused";
+      });
+
+      habilitiesContainer.addEventListener("mouseleave", function () {
+        habilitiesContainer.style.animationPlayState = "running";
+      });
+    });
+  </script>
 </html>

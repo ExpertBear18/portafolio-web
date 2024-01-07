@@ -1,0 +1,284 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* NAV */
+
+
+
+.nav{
+  width: 100%;
+  height: 7vh;
+  position: fixed;
+  background-color: rgba(5, 1, 1, 0.661);
+
+}
+
+.nav_ul{
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2em;
+  padding-right: 3em;
+}
+
+
+
+
+/* HEADER */
+
+
+
+
+.body__header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__article{
+  width: 80%;
+  padding-top: 8vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.article__section{
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article__h1{
+  font-size: 2.5em;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.article__p{
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+.figure__article{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__img{
+  width: 50%;
+  object-fit: cover;
+
+}
+
+
+
+
+/* MAIN SECTION ABOUT ME */
+
+
+
+
+main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section__about{
+  min-height: 40vh;
+  width: 80%;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section__h2{
+  font-size: 3em;
+}
+
+.section__h1{
+  font-size: 2.2em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  align-self: flex-start;
+}
+
+.section__p{
+  font-size: 1.5em
+}
+
+
+
+
+/* MAIN SECTION HABILITIES */
+
+
+
+
+.article__habilities{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+.section__habilities{
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  animation: scrollToLeft 8s linear infinite;
+
+}
+
+.about__h2{
+  font-size: 2.2em;
+}
+
+@keyframes scrollToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.item{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.habilities-item {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* ICONOS HABILITIES */
+
+
+
+
+.bxl-html5{
+  font-size: 70px;
+  color: transparent;
+  background: linear-gradient(to right, #e34c26, #f06529 ,#f17641 );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bxl-css3{
+  font-size: 70px;
+  color: transparent;
+  background: linear-gradient(to right,#264de4, #2965f1 );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bxl-javascript{
+  font-size: 70px;
+  color: transparent;
+  background: linear-gradient(to right, #f0db4f, #c2b03a);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bxl-nodejs{
+  font-size: 70px;
+  color: transparent;
+  background: linear-gradient(to right, #68a063, #68a063);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bxl-vuejs{
+  font-size: 70px;
+  color: transparent;
+  background: linear-gradient(#303030, #303030, #68a063,#68a063, #68a063);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bxl-postgresql{
+  font-size: 70px;
+  color: transparent;
+  background: linear-gradient(to right, #0064a5, #336791,  #008bb9);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bxl-mongodb{
+  font-size: 70px;
+  color: transparent;
+  background: linear-gradient(to right, #4DB33D, #3FA037);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bxl-typescript{
+  font-size: 70px;
+  color: transparent;
+  background: linear-gradient(#264de4, #2965f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+
+@media (max-width: 900px) {
+  .header__article {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+}

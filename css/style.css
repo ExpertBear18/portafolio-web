@@ -74,7 +74,7 @@ a{
   font-weight: 600
 }
 
-.bx-laptop{
+.bx-menu{
   font-size: 40px;
   color: transparent;
   background: linear-gradient(to right,#264de4, #2965f1 );
@@ -361,6 +361,19 @@ main{
   }
 }
 
+/* @media (max-width: 768px) {
+
+  .nav_ul {
+    position: fixed;
+    left: 0;
+    top: 7vh;
+    top: 0;
+    width: 400px;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+} */
+
 @media (max-width: 900px) {
   .header__article {
     display: flex;
@@ -373,5 +386,11 @@ main{
 
   .habilities-item{
     margin-right: 1rem;
+  }
+}
+
+@media (max-width: 1440px){
+  .header__img {
+    width: 70%;
   }
 }

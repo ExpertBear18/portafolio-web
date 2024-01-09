@@ -365,11 +365,11 @@ main{
   .menu {
     position: fixed;
     top: 7vh;
-    left: 0;
+    left: -100%;
     background-color: white;
     width: 85%;
     height: calc(100vh - 7vh);
-    padding: 30px 40px;
+    padding: 50px 40px;
     transition: left .5s;
   }
 

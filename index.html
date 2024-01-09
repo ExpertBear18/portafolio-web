@@ -101,9 +101,23 @@
   </body>
   <script>
 
+    ////////////////////////////////////
+
     btnOpen.onclick = function () {
       navMenu.classList.toggle('show-menu')
-    }
+    };
+
+    ////////////////////////////////////
+
+    var menuItems = document.querySelectorAll(".menu__link");
+
+      menuItems.forEach(function (menuItem) {
+      menuItem.addEventListener("click", function () {
+        navMenu.classList.remove('show-menu');
+      });
+    });
+
+   ////////////////////////////////////
 
     document.addEventListener("DOMContentLoaded", function () {
       var habilitiesContainer = document.querySelector(".habilities-container");

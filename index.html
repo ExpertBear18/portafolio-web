@@ -4,26 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <title>Portafolio Santiago Botero</title>
-    <link class="bx-laptop"
-      rel="icon"
-      href="./css/image/gummy-programming.svg"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="./css/image/gummy-programming.svg" type="image/x-icon"/>
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
   </head>
 
   <body>
     <nav class="nav">
-      <ul class="nav_ul">
-        <li><a href="#principal">Inicio</a></li>
-        <li><a href="#about-me">Sobre Mí</a></li>
-        <li><a href="#contacts">Contactos</a></li>
-        <i class='bx bx-menu'></i>
-      </ul>
+      <div id="navMenu" class="menu">
+        <ul class="menu__list">
+          <li><a class="menu__link" href="#principal">Inicio</a></li>
+          <li><a class="menu__link" href="#about-me">Sobre Mí</a></li>
+          <li><a class="menu__link" href="#contacts">Contactos</a></li>
+          <button id="btnOpen" class="btn-open bx bx-menu" type="button" aria-label="abrir menu"></button>
+        </ul>
+      </div>
     </nav>
     <header id="principal" class="body__header header hero">
       <article class="header__article article">
@@ -103,6 +98,11 @@
     </footer>
   </body>
   <script>
+
+    btnOpen.onClick = function (){
+      navMenu.classList.toggle('show-menu')
+    };
+
     document.addEventListener("DOMContentLoaded", function () {
       var habilitiesContainer = document.querySelector(".habilities-container");
 

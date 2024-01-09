@@ -16,9 +16,11 @@
           <li><a class="menu__link" href="#principal">Inicio</a></li>
           <li><a class="menu__link" href="#about-me">Sobre Mí</a></li>
           <li><a class="menu__link" href="#contacts">Contactos</a></li>
-          <button id="btnOpen" class="btn-open bx bx-menu" type="button" aria-label="abrir menu"></button>
         </ul>
       </div>
+      <button id="btnOpen" class="btn-open" type="button" aria-label="abrir menu">
+        <i class='bx bx-menu nav-icon'></i>
+      </button>
     </nav>
     <header id="principal" class="body__header header hero">
       <article class="header__article article">
@@ -99,9 +101,9 @@
   </body>
   <script>
 
-    btnOpen.onClick = function (){
+    btnOpen.onclick = function () {
       navMenu.classList.toggle('show-menu')
-    };
+    }
 
     document.addEventListener("DOMContentLoaded", function () {
       var habilitiesContainer = document.querySelector(".habilities-container");

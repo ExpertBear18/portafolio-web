@@ -535,6 +535,10 @@ main{
     margin-right: 1rem;
   }
 
+  .article__contact{
+    width: 100%;
+  }
+
   .section__form{
     width: 100%;
   }

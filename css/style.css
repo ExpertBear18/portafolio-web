@@ -469,6 +469,11 @@ main{
   .article__h1{
     font-size: 2.5em;
   }
+
+  .form__contact {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -534,6 +539,12 @@ main{
   .habilities-item{
     margin-right: 1rem;
   }
+}
+
+@media (max-width: 1440px){
+  .header__img {
+    width: 70%;
+  }
 
   .article__contact{
     width: 100%;
@@ -541,11 +552,5 @@ main{
 
   .section__form{
     width: 100%;
-  }
-}
-
-@media (max-width: 1440px){
-  .header__img {
-    width: 70%;
   }
 }

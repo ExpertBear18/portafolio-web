@@ -648,7 +648,7 @@ main{
 
 @media (max-width: 1440px){
   .header__img {
-    width: 70%;
+    width: 50%;
   }
 
   .article__contact{

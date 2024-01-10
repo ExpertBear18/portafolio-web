@@ -18,9 +18,12 @@
           <li><a class="menu__link" href="#contacts">Contactos</a></li>
         </ul>
       </div>
-      <button id="btnOpen" class="btn-open" type="button" aria-label="abrir menu">
-        <i class='bx bx-menu nav-icon'></i>
+      <button id="btnOpen" class="btn__open" type="button" aria-label="abrir menu">
+        <i class='bx bx-menu'></i>
       </button>
+      <div class="icon_laptop">
+          <i class='bx bx-laptop laptop'></i>
+      </div>
     </nav>
     <header id="principal" class="body__header header hero">
       <article class="header__article article">
@@ -45,9 +48,9 @@
     </header>
     <main>
       <section class="section__about" id="about-me">
-        <h2 class="section__h2">Sobre Mí</h2>
-        <h1 class="section__h1">Un poco sobre mí</h1>
-        <p class="section__p">
+        <h1 class="about__h1">Sobre Mí</h1>
+        <h2 class="about__h2">Un poco sobre mí</h2>
+        <p class="about__p">
           Me llamo Santiago Botero, tengo 18 años y estoy estudiando para ser un
           Programador FullStack, en este momento me encuentro estudiando en
           Academlo para tener un trabajo como programador FullStack y trabajar
@@ -57,7 +60,7 @@
         </p>
       </section>
       <article class="article__habilities">
-        <h2 class="about__h2">Habilidades</h2>
+        <h2 class="habilities__h2">Habilidades</h2>
         <section class="section__habilities habilities-container">
           <div class="habilities-item item">
             <i class="bx bxl-html5"></i>
@@ -79,7 +82,6 @@
             <i class="bx bxl-vuejs"></i>
             <p>VueJS</p>
           </div>
-          <!-- ... -->
           <div class="habilities-item">
             <i class="bx bxl-postgresql"></i>
             <p>PostgreSQL</p>
@@ -94,41 +96,30 @@
           </div>
         </section>
       </article>
+      <article class="article__contact">
+        <h2 class="contact__h2">Contacto</h2>
+        <section class="section__form">
+          <form id="contacts" class="form__contact">
+            <label class="label__contact">
+                Nombre
+                <input class="input__contact" type="text" name="name" id="name">
+            </label>
+            <label class="label__contact">
+                Email
+                <input class="input__contact" type="email" name="email" id="email">
+            </label>
+            <label class="label__contact">
+                Mensaje
+                <textarea class="message__contact" name="message" id="message"></textarea>
+            </label>
+            <button class="button__contact" type="button" onclick="enviarFormulario()">Enviar</button>
+        </form>
+        </section>
+      </article>
     </main>
-    <footer id="contacts" class="">
+    <footer class="container__footer">
       <p>&copy; Derechos Reservados</p>
     </footer>
   </body>
-  <script>
-
-    ////////////////////////////////////
-
-    btnOpen.onclick = function () {
-      navMenu.classList.toggle('show-menu')
-    };
-
-    ////////////////////////////////////
-
-    var menuItems = document.querySelectorAll(".menu__link");
-
-      menuItems.forEach(function (menuItem) {
-      menuItem.addEventListener("click", function () {
-        navMenu.classList.remove('show-menu');
-      });
-    });
-
-   ////////////////////////////////////
-
-    document.addEventListener("DOMContentLoaded", function () {
-      var habilitiesContainer = document.querySelector(".habilities-container");
-
-      habilitiesContainer.addEventListener("mouseenter", function () {
-        habilitiesContainer.style.animationPlayState = "paused";
-      });
-
-      habilitiesContainer.addEventListener("mouseleave", function () {
-        habilitiesContainer.style.animationPlayState = "running";
-      });
-    });
-  </script>
+  <script src="./script.js"></script>
 </html>

@@ -69,19 +69,25 @@ a{
 .menu__list{
   display: flex;
   gap: 2em;
-  padding-right: 3em;
+  padding-right: 2em;
   font-family: 'Figtree', sans-serif;
   font-weight: 600
 }
 
-.bx-menu{
+.btn__open {
+  display: none;
+}
+
+.icon_laptop{
+  position: relative;
+}
+
+.bx-laptop{
   font-size: 40px;
   color: transparent;
   background: linear-gradient(to right,#264de4, #2965f1 );
   background-clip: text;
 }
-
-
 
 
 /* HEADER */
@@ -196,13 +202,13 @@ main{
   flex-direction: column;
 }
 
-.section__h2{
+.about__h1{
   font-size: 3em;
   font-family: 'Figtree', sans-serif;
-  font-weight: 600
+  font-weight: 800
 }
 
-.section__h1{
+.about__h2{
   font-size: 2.2em;
   margin-top: 3em;
   margin-bottom: 1em;
@@ -211,7 +217,7 @@ main{
   align-self: flex-start;
 }
 
-.section__p{
+.about__p{
   font-size: 1.5em;
   font-family: 'Figtree', sans-serif;
   font-weight: 300;
@@ -242,7 +248,7 @@ main{
 
 }
 
-.about__h2{
+.habilities__h2{
   font-size: 2.2em;
   font-family: 'Figtree', sans-serif;
   font-weight: 600
@@ -350,6 +356,111 @@ main{
 
 
 
+/* CONTACTO */
+
+
+
+.article__contact {
+  /* background-color: lightcoral; */
+  width: 80%;
+  min-height: 40vh;
+  padding: 30px;
+  margin-top: 3rem;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__h2{
+  font-size: 3em;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 800
+}
+
+.form__contact{
+  width: 80%;
+  gap: 2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__contact label{
+  font-size: 1.2em;
+}
+
+.section__form{
+  /* background-color: lightblue; */
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label__contact {
+  width: 100%;
+  gap: 0.5em;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.input__contact{
+  font-size: 1.2em;
+  border-radius: 0.2em;
+  border: none;
+  background-color: #374151;
+  color: white;
+  padding-left: 0.5em;
+  height: 2em;
+}
+
+.message__contact{
+  font-size: 1.5em;
+  border-radius: 0.2em;
+  border: none;
+  background-color: #374151;
+  color: white;
+  padding: 0.5em;
+  min-height: 100px;
+}
+
+.button__contact{
+  margin-top: 1.2em;
+  padding: 10px;
+  width: 20%;
+  font-size: 1em;
+  border-radius: 0.2em;
+  border: none;
+  background-color: #264de4;
+  color: white;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* PIE DE PAGINA */
+
+
+
+.container__footer {
+  width: 100%;
+  height: 10vh;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #374151;
+  color: white
+}
+
+
+
 /* MEDIA QUERIES */
 
 
@@ -379,20 +490,36 @@ main{
 
   .menu__list {
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 3rem;
   }
 
   .menu__link{
     text-transform: uppercase;
     font-weight: 800;
   }
-}
 
-@media (min-width: 768px) {
-  btn-open {
+  .btn__open {
+    display: flex;
+  }
+
+  .bx-menu{
+    font-size: 40px;
+    color: transparent;
+    background: linear-gradient(to right,#264de4, #2965f1 );
+    background-clip: text;
+  }
+
+  .bx-laptop{
+    opacity: 0;
+  }
+
+  .bx-laptop:before{
     display: none;
   }
+
+
 }
+
 
 @media (max-width: 900px) {
   .header__article {
@@ -406,6 +533,10 @@ main{
 
   .habilities-item{
     margin-right: 1rem;
+  }
+
+  .section__form{
+    width: 100%;
   }
 }
 

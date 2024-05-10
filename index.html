@@ -6,7 +6,8 @@
     <title>Portafolio Santiago Botero</title>
     <link rel="icon" href="./assets/css/image/gummy-programming.svg" type="image/x-icon"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
 
   <body>
@@ -15,6 +16,7 @@
         <ul class="menu__list">
           <li><a class="menu__link" href="#principal">Inicio</a></li>
           <li><a class="menu__link" href="#about-me">Sobre Mí</a></li>
+          <li><a class="menu__link" href="#Projects">Proyectos</a></li>
           <li><a class="menu__link" href="#reviews">Reseñas</a></li>
           <li><a class="menu__link" href="#contacts">Contactos</a></li>
         </ul>
@@ -34,8 +36,7 @@
             <span class="article__span">Desarrollador Junior FullStack</span>
           </h1>
           <p class="article__p">
-            Soy un Desarrollador Junior FullStack, que se encuentra estudiando
-            para encontrar trabajo como programador.
+            Desarrollador Junior FullStack, estoy preparado para crecer y destacar en el mundo de la programación
           </p>
         </section>
         <figure class="figure__article">
@@ -52,70 +53,161 @@
         <h1 class="about__h1">Sobre Mí</h1>
         <h2 class="about__h2">Un poco sobre mí</h2>
         <p class="about__p">
-          Me llamo Santiago Botero, tengo 18 años y estoy estudiando para ser un
-          Programador FullStack, en este momento me encuentro estudiando en
-          Academlo para tener un trabajo como programador FullStack y trabajar
-          en lo que me gusta, que es la programación, soy bachiller, tengo
-          habilidades en algunas áreas de la programación FullStack y ya cuento
-          con 1 año de experiencia.
+          Santiago Botero, un apasionado de la programación con 18 años de edad. Estudiando en Academlo, estoy en camino de convertirme en un Programador FullStack, respaldado por un año de experiencia en el campo. Mi objetivo es materializar mi pasión trabajando en el mundo de la programación.
         </p>
       </section>
       <article class="article__habilities">
         <h2 class="habilities__h2">Habilidades</h2>
-        <section class="section__habilities habilities-container">
-          <div class="habilities-item item">
-            <i class="bx bxl-html5"></i>
-            <p>HTML</p>
-          </div>
-          <div class="habilities-item">
-            <i class="bx bxl-css3"></i>
-            <p>CSS</p>
-          </div>
-          <div class="habilities-item">
-            <i class="bx bxl-javascript"></i>
-            <p>JavaScript</p>
-          </div>
-          <div class="habilities-item">
-            <i class="bx bxl-nodejs"></i>
-            <p>NodeJS</p>
-          </div>
-          <div class="habilities-item">
-            <i class="bx bxl-vuejs"></i>
-            <p>VueJS</p>
-          </div>
-          <div class="habilities-item">
-            <i class="bx bxl-postgresql"></i>
-            <p>PostgreSQL</p>
-          </div>
-          <div class="habilities-item">
-            <i class="bx bxl-mongodb"></i>
-            <p>MongoDB</p>
-          </div>
-          <div class="habilities-item">
-            <i class="bx bxl-typescript"></i>
-            <p>TypeScript</p>
-          </div>
+        <section class="section__habilities">
+                <button class="left" id="prev-btn"><i class='bx bx-chevron-left left'></i></button>
+                <div class="slider-container">
+                    <i id="slider-icon" class="bx"></i>
+                    <label id="title"></label>
+                 </div>
+                <div class="buttons">
+                    <button class="right" id="next-btn"><i class='bx bx-chevron-right right'></i></button>
+                </div>
         </section>
       </article>
-      <section id="reviews" class="section__reviews">
+      <article class="article_projects" id="Projects">
+        <h2 class="projects__h2">Proyectos</h2>
+        <div class="card-group">
+          <div class="card">
+            <img src="/assets/css/image/pokedex.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pokedex</h5>
+              <p class="card-text">Página con el propósito de proporcionar información detallada sobre todos los pokemones existentes.</p>
+              <p class="card-text"><small class="text-body-secondary">
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://github.com/Santiago081518/Pokedex.git" target="_blank">
+                  <i class='bx bxl-github bi' aria-hidden="true"></i>
+                  GitHub
+                </a>
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://pokedex-santiago.netlify.app/" target="_blank">
+                  <i class='bx bx-link-alt bi' aria-hidden="true" ></i>
+                  Ver proyecto
+                </a>
+              </small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/css/image/Rick and Morty.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rick and Morty</h5>
+              <p class="card-text">Una API completa centrada en la serie Rick and Morty, ofreciendo información detallada sobre personajes de diversas dimensiones.</p>
+              <p class="card-text"><small class="text-body-secondary">
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://github.com/Santiago081518/API-Rick-and-Morty.git" target="_blank">
+                  <i class='bx bxl-github bi' aria-hidden="true"></i>
+                  GitHub
+                </a>
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://api-rick-and-morty-santiago.netlify.app/" target="_blank">
+                  <i class='bx bx-link-alt bi' aria-hidden="true" ></i>
+                  Ver proyecto
+                </a>
+              </small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/css/image/Ecommerce.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ecommerce</h5>
+              <p class="card-text">Sitio web de comercio electrónico utilizando HTML, CSS y JavaScript para simular la venta de ropa.</p>
+              <p class="card-text"><small class="text-body-secondary">
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://github.com/Santiago081518/E-commerce.git" target="_blank">
+                  <i class='bx bxl-github bi' aria-hidden="true"></i>
+                  GitHub
+                </a>
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://e-commerce-santiago.netlify.app/" target="_blank">
+                  <i class='bx bx-link-alt bi' aria-hidden="true" ></i>
+                  Ver proyecto
+                </a>
+              </small></p>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <img src="/assets/css/image/crud-users.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CRUD de usuarios</h5>
+              <p class="card-text">Un sistema CRUD que permite la gestión completa de perfiles de usuario, incluyendo la creación, edición y eliminación de usuarios.</p>
+              <p class="card-text"><small class="text-body-secondary">
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://github.com/Santiago081518/CRUD-Users.git" target="_blank">
+                  <i class='bx bxl-github bi' aria-hidden="true"></i>
+                  GitHub
+                </a>
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://crud-users-santiago.netlify.app/" target="_blank">
+                  <i class='bx bx-link-alt bi' aria-hidden="true" ></i>
+                  Ver proyecto
+                </a>
+              </small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/css/image/weather app.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">App del clima</h5>
+              <p class="card-text">Una aplicación de pronóstico del clima que muestra información precisa y actualizada sobre la temperatura en grados Celsius y Fahrenheit de la ubicación del usuario.</p>
+              <p class="card-text"><small class="text-body-secondary">
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://github.com/Santiago081518/Weather-App.git" target="_blank">
+                  <i class='bx bxl-github bi' aria-hidden="true"></i>
+                  GitHub
+                </a>
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://weather-app-santiago.netlify.app/" target="_blank">
+                  <i class='bx bx-link-alt bi' aria-hidden="true" ></i>
+                  Ver proyecto
+                </a>
+              </small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/css/image/galleta de la fortuna.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Galleta de la fortuna</h5>
+              <p class="card-text">Una página web que ofrece frases aleatorias según la suerte del usuario.</p>
+              <p class="card-text"><small class="text-body-secondary">
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://github.com/Santiago081518/galleta-fortuna.git" target="_blank">
+                  <i class='bx bxl-github bi' aria-hidden="true"></i>
+                  GitHub
+                </a>
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://galleta-fortuna-santiago.netlify.app/" target="_blank">
+                  <i class='bx bx-link-alt bi' aria-hidden="true" ></i>
+                  Ver proyecto
+                </a>
+              </small></p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <section id="reviews">
         <h2 class="review__h2">Reseñas</h2>
         <div class="review__images">
-          <figure class="image__review">
-            <img class="persons__reviews" src="https://img.freepik.com/foto-gratis/worldface-hombre-espanol-fondo-blanco_53876-139733.jpg" alt="Persona 1">
-            <p class="review__p1">Nelson Botero</p>
-            <p class="review__p2">Me gusto mucho su trabajo, entrego el proyecto antes del tiempo estimulado y el proyecto quedo mejor de lo que espere, muy recomendado.</p>
-          </figure>
-          <figure class="image__review">
-            <img class="persons__reviews" src="https://covalto.com/static/78498ccda70933a5f1e3edc3e40d3cbe/34aca/Hero_Mobile_Cuenta_Personas_V1_1_8046e424ea.webp" alt="Persona 2">
-            <p class="review__p1">Luis Daniel</p>
-            <p class="review__p2">Trabaje con el por 2 años y fue uno de los mejores durante su tiempo en la empresa, era buen compañero ya que siempre me ayudaba cuando tenia problemas en el codigo.
-            </p>
-          </figure>
-          <figure class="image__review">
-            <img class="persons__reviews" src="https://pymstatic.com/5844/conversions/personas-emocionales-wide_webp.webp" alt="Persona 3">
-            <p class="review__p1">Andrea Valencia</p>
-            <p class="review__p2">Me gusta la rapidez con la que entrega los proyectos y tambien su dedicacion para presentar algo mejor a lo que se pidio.</p>
-          </figure>
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="/assets/css/image/carrusel-img-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="/assets/css/image/carrusel-img-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/css/image/carrusel-img-3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </section>
       <article class="article__contact">
@@ -144,5 +236,6 @@
       <p class="footer__p">&copy; Derechos Reservados</p>
     </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="./assets/js/script.js"></script>
 </html>

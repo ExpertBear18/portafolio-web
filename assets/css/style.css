@@ -11,6 +11,7 @@
 
 html{
   scroll-behavior: smooth !important;
+  font-family: 'Figtree', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -43,7 +44,7 @@ ul{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
   color: black;
 }
 
@@ -70,7 +71,6 @@ a{
   display: flex;
   gap: 2em;
   padding-right: 2em;
-  font-family: 'Figtree', sans-serif;
   font-weight: 600
 }
 
@@ -143,7 +143,6 @@ a{
 }
 
 .article__h1{
-  font-family: 'Figtree', sans-serif;
   font-weight: 800;
   font-size: 4em;
   width: 100%;
@@ -155,7 +154,6 @@ a{
 }
 
 .article__p{
-  font-family: 'Figtree', sans-serif;
   font-weight: 300;
   margin-top: 1.5em;
   font-size: 1.5em;
@@ -206,7 +204,6 @@ main{
 
 .about__h1{
   font-size: 3em;
-  font-family: 'Figtree', sans-serif;
   font-weight: 800
 }
 
@@ -214,22 +211,18 @@ main{
   font-size: 2.2em;
   margin-top: 3em;
   margin-bottom: 1em;
-  font-family: 'Figtree', sans-serif;
   font-weight: 600;
   align-self: flex-start;
 }
 
 .about__p{
   font-size: 1.5em;
-  font-family: 'Figtree', sans-serif;
   font-weight: 300;
 }
 
 
 
-
-/* MAIN SECTION HABILITIES */
-
+/* SECTION HABILITIES */
 
 
 
@@ -238,8 +231,6 @@ main{
   max-width: 1480px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-
 }
 
 .section__habilities{
@@ -247,44 +238,12 @@ main{
   margin-top: 2em;
   display: flex;
   justify-content: center;
-  animation: scrollToLeft 8s linear infinite;
-
 }
 
 .habilities__h2{
   font-size: 2.2em;
-  font-family: 'Figtree', sans-serif;
   font-weight: 600
 }
-
-@keyframes scrollToLeft {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.item{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.habilities-item {
-  width: 100%;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Figtree', sans-serif;
-  font-weight: 600
-}
-
 
 
 
@@ -292,9 +251,8 @@ main{
 
 
 
-
-.bxl-html5{
-  font-size: 70px;
+ .bxl-html5{
+  font-size: 300px;
   color: transparent;
   background: linear-gradient(to right, #e34c26, #f06529 ,#f17641 );
   -webkit-background-clip: text;
@@ -302,7 +260,7 @@ main{
 }
 
 .bxl-css3{
-  font-size: 70px;
+  font-size: 300px;
   color: transparent;
   background: linear-gradient(to right,#264de4, #2965f1 );
   -webkit-background-clip: text;
@@ -310,7 +268,7 @@ main{
 }
 
 .bxl-javascript{
-  font-size: 70px;
+  font-size: 300px;
   color: transparent;
   background: linear-gradient(to right, #f0db4f, #c2b03a);
   -webkit-background-clip: text;
@@ -318,7 +276,7 @@ main{
 }
 
 .bxl-nodejs{
-  font-size: 70px;
+  font-size: 300px;
   color: transparent;
   background: linear-gradient(to right, #68a063, #68a063);
   -webkit-background-clip: text;
@@ -326,7 +284,7 @@ main{
 }
 
 .bxl-vuejs{
-  font-size: 70px;
+  font-size: 300px;
   color: transparent;
   background: linear-gradient(#303030, #303030, #68a063,#68a063, #68a063);
   -webkit-background-clip: text;
@@ -334,7 +292,7 @@ main{
 }
 
 .bxl-postgresql{
-  font-size: 70px;
+  font-size: 300px;
   color: transparent;
   background: linear-gradient(to right, #0064a5, #336791,  #008bb9);
   -webkit-background-clip: text;
@@ -342,7 +300,7 @@ main{
 }
 
 .bxl-mongodb{
-  font-size: 70px;
+  font-size: 300px;
   color: transparent;
   background: linear-gradient(to right, #4DB33D, #3FA037);
   -webkit-background-clip: text;
@@ -350,11 +308,98 @@ main{
 }
 
 .bxl-typescript{
-  font-size: 70px;
+  font-size: 300px;
   color: transparent;
   background: linear-gradient(#264de4, #2965f1);
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+.bxl-react{
+  font-size: 300px;
+  color: transparent;
+  background: linear-gradient(#33b1ba, #2683d0);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bxl-git {
+  font-size: 300px;
+  color: transparent;
+  background: linear-gradient(#f37c06, #e19209);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.left{
+  display: none;
+  font-size: 2em;
+  width: 30px;
+  height: 30px;
+}
+
+.right{
+  display: none;
+  font-size: 2em;
+  width: 30px;
+  height: 30px;
+}
+
+.prev-btn{
+  display: none;
+}
+
+.slider-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container label{
+  font-size: 2em;
+}
+
+
+/* PROYECTOS */
+
+
+
+.article_projects{
+  width: 80%;
+  max-width: 1480px;
+  margin: 5rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.projects__h2 {
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+.card-group {
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.card {
+  margin: 0 3rem 0 3rem;
+  transition: .2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: .2s;
+}
+
+.icon-link {
+  padding-left: 2rem;
 }
 
 
@@ -363,20 +408,8 @@ main{
 
 
 
-.section__reviews {
-  width: 60%;
-  max-width: 1480px;
-  min-height: 40vh;
-  margin-top: 6rem;
-  gap: 4rem;
-  padding: 4rem;
-  display: flex;
-  flex-direction: column;
-}
-
 .review__h2 {
   font-size: 3em;
-  font-family: 'Figtree', sans-serif;
   font-weight: 800;
   display: flex;
   justify-content: center;
@@ -384,23 +417,12 @@ main{
 
 .review__p1{
   font-size: 1em;
-  font-family: 'Figtree', sans-serif;
   font-weight: 600;
 }
 
 .review__p2{
   font-size: 1em;
-  font-family: 'Figtree', sans-serif;
   font-weight: 300;
-}
-
-.review__images{
-  width: 100%;
-  gap: 4rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .persons__reviews{
@@ -438,12 +460,10 @@ main{
 
 .contact__h2{
   font-size: 3em;
-  font-family: 'Figtree', sans-serif;
   font-weight: 800
 }
 
 .contact__p{
-  font-family: 'Figtree', sans-serif;
   font-weight: 300;
   margin-top: 1.5em;
   font-size: 1.3em;
@@ -475,7 +495,6 @@ main{
 .label__contact {
   width: 100%;
   gap: 0.5em;
-  font-family: 'Figtree', sans-serif;
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -510,10 +529,15 @@ main{
   border: none;
   background-color: #264de4;
   color: white;
-  font-family: 'Figtree', sans-serif;
   font-weight: 600;
   display: flex;
   justify-content: center;
+  transition: .2s;
+}
+
+.button__contact:hover {
+  transform: scale(1.1);
+  transition: .2s;
 }
 
 
@@ -535,7 +559,6 @@ main{
 
 .footer__p{
   font-size: 1em;
-  font-family: 'Figtree', sans-serif;
   font-weight: 800
 }
 
@@ -604,6 +627,10 @@ main{
     padding: 0;
   }
 
+  .article_projects{
+    width: 100%;
+  }
+
 }
 
 
@@ -621,11 +648,6 @@ main{
     margin-right: 1rem;
   }
 
-  .section__reviews {
-    width: 100%;
-    padding: 0.5rem;
-  }
-
   .image__review{
     width: 100%;
     display: flex;
@@ -637,13 +659,6 @@ main{
     width: 50%;
     display: flex;
     justify-content: center;
-  }
-}
-
-@media (min-width: 900px) {
-  .section__reviews {
-    width: 60%;
-    padding: 0;
   }
 }
 

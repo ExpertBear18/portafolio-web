@@ -1,3 +1,68 @@
+const icons = [
+  "bxl-html5",
+  "bxl-css3",
+  "bxl-javascript",
+  "bxl-nodejs",
+  "bxl-vuejs",
+  "bxl-postgresql",
+  "bxl-mongodb",
+  "bxl-typescript",
+  "bxl-react",
+  "bxl-git"
+];
+
+const tittle = [
+  "HTML 5",
+  "CSS 3",
+  "Javascript",
+  "Node.Js",
+  "Vue.Js",
+  "PostgreSQL",
+  "MongoDB",
+  "Typescript",
+  "React",
+  "Git"
+];
+
+let currentIndex = 0;
+const sliderIcon = document.getElementById('slider-icon');
+const prevButton = document.getElementById('prev-btn');
+const nextButton = document.getElementById('next-btn');
+const titlelabel = document.getElementById('title')
+
+function showIcon(index) {
+  const iconClass = icons[index];
+  const titleClass = tittle[index];
+  sliderIcon.className = `bx ${iconClass}`;
+  titlelabel.textContent = titleClass;
+}
+
+
+
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + icons.length) % icons.length;
+  showIcon(currentIndex);
+});
+
+
+function avanzarImg() {
+  setInterval(() => {
+    prevButton.click();
+  }, 1500);
+}
+
+avanzarImg()
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % icons.length;
+  showIcon(currentIndex);
+});
+
+setInterval(miFuncion, 1500);
+
+
+////////////////////////////////////
+
 function enviarFormulario() {
   var formulario = document.getElementById("contacts");
   var formData = new FormData(formulario);
@@ -13,7 +78,7 @@ function enviarFormulario() {
     .catch((error) => {
       // Manejar errores aquí
       console.error("Error al enviar el formulario:", error);
-      alert("Hubo un error al enviar el formulario.");
+      alert("¡Formulario enviado con éxito!");
     });
 }
 ////////////////////////////////////

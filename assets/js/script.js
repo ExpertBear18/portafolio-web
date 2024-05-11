@@ -60,8 +60,6 @@ nextButton.addEventListener('click', () => {
   showIcon(currentIndex);
 });
 
-setInterval(miFuncion, 1500);
-
 
 ////////////////////////////////////
 
@@ -86,15 +84,14 @@ function enviarFormulario() {
 ////////////////////////////////////
 
 btnOpen.onclick = function () {
-  navMenu.classList.toggle('show-menu');
+  const navMenu = document.getElementById('navMenu');
+  if (navMenu.classList.contains('show-menu')) {
+    navMenu.classList.remove("show-menu");
+  } else {
+    navMenu.classList.add("show-menu");
+  }
 };
 
 ////////////////////////////////////
 
 var menuItems = document.querySelectorAll(".menu__link");
-
-menuItems.forEach(function (menuItem) {
-  menuItem.addEventListener("click", function () {
-    navMenu.classList.remove("show-menu");
-  });
-});

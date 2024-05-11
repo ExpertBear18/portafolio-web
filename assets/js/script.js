@@ -95,3 +95,10 @@ btnOpen.onclick = function () {
 ////////////////////////////////////
 
 var menuItems = document.querySelectorAll(".menu__link");
+
+menuItems.forEach(item => {
+  item.addEventListener('click', function () {
+    const navMenu = document.getElementById('navMenu');
+    navMenu.classList.remove('show-menu');
+  });
+});

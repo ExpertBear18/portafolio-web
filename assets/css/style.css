@@ -415,31 +415,6 @@ main{
   justify-content: center;
 }
 
-.review__p1{
-  font-size: 1em;
-  font-weight: 600;
-}
-
-.review__p2{
-  font-size: 1em;
-  font-weight: 300;
-}
-
-.persons__reviews{
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.image__review{
-  gap: 3rem;
-  padding: 1rem;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 5rem 7rem 1fr;
-}
-
 
 
 /* CONTACTO */
@@ -646,19 +621,6 @@ main{
 
   .habilities-item{
     margin-right: 1rem;
-  }
-
-  .image__review{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .review__p2{
-    width: 50%;
-    display: flex;
-    justify-content: center;
   }
 }
 
